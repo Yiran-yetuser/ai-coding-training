@@ -21,6 +21,17 @@ uv run python scripts/check_env.py
 
 如果在编辑器中运行 Python，选择本仓库的 `.venv/bin/python` 作为解释器。
 
+## VS Code 调试
+
+在 VS Code 中打开整个仓库文件夹，安装微软的 Python 和 Python Debugger 扩展。仓库的 `.vscode/launch.json` 已固定使用 `.venv/bin/python`。
+
+1. 按 `⌘⇧D` 打开“运行和调试”。
+2. 选择“检查环境（启动即暂停）”，点击菜单“运行 → 开始调试”。程序会先停在脚本开头。
+3. 在 `scripts/check_env.py` 第 15 行设置断点，点击“继续”，查看 `x`、`weights` 和 `output` 的值与 shape。
+4. 后续训练时，打开当天的 Python 文件，选择“调试当前 Python 文件”启动。
+
+普通运行会直接执行程序；用“开始调试”启动才能使用 VS Code 断点。详细操作见 [VS Code 官方调试文档](https://code.visualstudio.com/docs/python/debugging)。
+
 ## 训练记录
 
 开始训练后，按顺序使用以下结构：
