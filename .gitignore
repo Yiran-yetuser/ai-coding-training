@@ -1,0 +1,39 @@
+# Local environments and tools
+.venv/
+venv/
+.cache/
+.tools/
+.local/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.ipynb_checkpoints/
+
+# Credentials and local configuration
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+.codex/
+.agents/
+.idea/
+.vscode/
+.DS_Store
+
+# Downloaded datasets, model weights, and experiment outputs
+data/
+datasets/
+checkpoints/
+weights/
+runs/
+wandb/
+outputs/
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.onnx
