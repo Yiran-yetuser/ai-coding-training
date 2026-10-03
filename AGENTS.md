@@ -13,17 +13,18 @@
 - 题目应带有具体信息背景：在“必要背景”内补充 1～2 个相关经典算法、模型或真实工程流程的使用场景，说明这段代码位于哪一步、为什么需要它，不只罗列算法名字。
 - 背景可以从算法出处、真实应用、设计取舍或 bug 的实际影响中选择最相关的角度。必要知识仍用 3～6 句话解释，应用关联保持简短；可附少量官方文档或原始论文链接供选读，总理论阅读不超过 5 分钟。
 - 区分练习中的简化步骤与完整算法，明确边界条件以本题约定为准；背景丰富不代表提高实现难度，也不应泄露答案。
-- 优先真实 AI 开发场景，领域可以覆盖 Python、NumPy、PyTorch、ML、DL、CV、NLP、Transformer/LLM、RL、Diffusion、多模态/VLM、VLA/机器人、3D Vision、World Models、Agents、RAG、训练/微调、推理/量化、AI Systems 和 Debugging。
+- 优先让 Coding 任务本身落在具体 AI 开发步骤中，例如模型输入预处理、loss/指标计算或推理后处理；不要只给普通数值函数再附一段 AI 背景。领域可以覆盖 Python、NumPy、PyTorch、ML、DL、CV、NLP、Transformer/LLM、RL、Diffusion、多模态/VLM、VLA/机器人、3D Vision、World Models、Agents、RAG、训练/微调、推理/量化、AI Systems 和 Debugging。保持难度渐进，不因 AI 场景提高无关实现难度。
 - Coding Skill 要形成积累：shape、broadcasting、indexing、masking、dtype、device、gradient、数值稳定性、batch、效率、内存/显存、模块设计等。
 - 轮换补全、Debug、陌生代码阅读、重构、优化、模型模块、训练/推理逻辑及支持 batch/mask/device 等题型；不要长期只出从零实现函数或 LeetCode 题。
 - 可以连续 2～3 天逐步深入重要能力；薄弱能力安排后续复习，不马上重复相同题。
-- 使用连续编号的 `day001/`、`day002/` 等目录。生成题目时，只创建或更新当天 `problem.md`；不创建或修改 `solution.py`，不提前写 `notes.md`，不生成参考答案。
+- 使用连续编号的 `day001/`、`day002/` 等目录。每次出题创建当天的 `problem.md` 和 `solution.md` 骨架；不创建或修改用户的 `solution.py`，不提前写 `notes.md`，不生成参考答案。
 - `problem.md` 按以下顺序组织：
   1. 今日 Coding Skill：说明主要练习的编程能力。
   2. 必要背景：用 3～6 句话说明解决的问题、输入、输出和代码负责的步骤，并简短关联 1～2 个经典算法或真实工程场景。
   3. 小例子：用数字、tensor、shape、极短伪代码或几行代码帮助理解，不泄露完整答案。
   4. Coding 任务：明确要写、读、修改或 Debug 的代码，给出完成范围和约束。
   5. 验收标准：输入输出、必须满足的行为和重要 edge cases，最多 1～2 个测试样例。
+- 配套的 `solution.md` 是用户动手写代码的骨架：列出所需函数签名和少量 `TODO`，并列出简洁验收要求及最多 1～2 个测试样例；不填实现。它补充 `problem.md`，不能替代题目说明。
 
 ## 难度递进
 
@@ -40,7 +41,7 @@
 - Review 检查 correctness、edge cases、tensor shape、dtype、device、gradient、numerical stability、computational complexity、memory usage 和 readability；能运行但写法不佳也指出。
 - 不为低影响改动生成额外测试；验证提交代码时只做与题目验收有关的必要检查。Ruff 仅辅助可读性检查，不替代功能验证。
 - 只有用户明确说“给我参考答案”时，才给完整实现。参考答案默认放在回复里；未经明确要求，不覆盖用户的 `solution.py`。
-- 用户完成并接受 Review 后，再协助整理当天 `notes.md`，保留实际 bug 和学习过程，不捏造完成记录。
+- 用户完成并接受 Review 后，整理当天 `notes.md`，保留实际 bug 和学习过程，不把过期骨架注释等编辑清理项记成训练问题；随后将当天训练文件提交并推送到 GitHub，不强制推送。
 - 训练完成后的总结只包含：Coding Skill、出现的问题、值得记住的 Pattern、后续可以加强。
 
 ## 环境和仓库
