@@ -17,14 +17,14 @@
 - Coding Skill 要形成积累：shape、broadcasting、indexing、masking、dtype、device、gradient、数值稳定性、batch、效率、内存/显存、模块设计等。
 - 轮换补全、Debug、陌生代码阅读、重构、优化、模型模块、训练/推理逻辑及支持 batch/mask/device 等题型；不要长期只出从零实现函数或 LeetCode 题。
 - 可以连续 2～3 天逐步深入重要能力；薄弱能力安排后续复习，不马上重复相同题。
-- 使用连续编号的 `day001/`、`day002/` 等目录。每次出题创建当天的 `problem.md` 和 `solution.md` 骨架；不创建或修改用户的 `solution.py`，不提前写 `notes.md`，不生成参考答案。
+- 使用连续编号的 `day001/`、`day002/` 等目录。每次出题创建当天的 `problem.md` 和 `solution.py` Python 骨架；不创建 `solution.md`，用户开始编写后不覆盖其 `solution.py`，不提前写 `notes.md`，不生成参考答案。
 - `problem.md` 按以下顺序组织：
   1. 今日 Coding Skill：说明主要练习的编程能力。
   2. 必要背景：用 3～6 句话说明解决的问题、输入、输出和代码负责的步骤，并简短关联 1～2 个经典算法或真实工程场景。
   3. 小例子：用数字、tensor、shape、极短伪代码或几行代码帮助理解，不泄露完整答案。
   4. Coding 任务：明确要写、读、修改或 Debug 的代码，给出完成范围和约束。
   5. 验收标准：输入输出、必须满足的行为和重要 edge cases，最多 1～2 个测试样例。
-- 配套的 `solution.md` 是用户动手写代码的骨架：列出所需函数签名和少量 `TODO`，并列出简洁验收要求及最多 1～2 个测试样例；不填实现。它补充 `problem.md`，不能替代题目说明。
+- 配套的 `solution.py` 是用户动手写代码的 Python 骨架：包含必要导入、函数签名、少量 `TODO`，以及简洁验收要求对应的最多 1～2 个可运行测试样例；不填参考实现。Debug 题可以保留题目指定的有 bug 代码。它补充 `problem.md`，不能替代题目说明。
 
 ## 难度递进
 
